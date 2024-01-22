@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 
-<h1 align="center">GitHub DevSecOps Demo/h1>
+<h1 align="center">GitHub DevSecOps Demo</h1>
 
 <p align="center">
   <a href="https://github-partner-demo-library.github.io/github-devsecops-fundamentals/prerequisites">Prerequisites</a> •
