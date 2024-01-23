@@ -1,4 +1,4 @@
-name: Run checks on PR
+name: Run Checks on PR
 
 on:
   pull_request:
@@ -54,3 +54,13 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+  security-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v3
+        with:
+          config-file: >-
+            ./.github/dependency-review-config.yml
